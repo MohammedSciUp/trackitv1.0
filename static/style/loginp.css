@@ -1,1 +1,177 @@
-12
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+/* ---------------------------    ROOT VARIABLES    -------------------------- */
+:root {
+    --color-primary: #009de0;
+    --color-danger: #ff7782;
+    --color-success: #00be7f;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1ab;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200,0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-redius: 5px;
+    --border-redius-1: 0.4rem;
+    --border-redius-2: 0.8rem;
+    --border-redius-3: 1.2rem;
+
+    --card-padding:00.5rem;
+    --padding-1:1.2rem;
+
+    --box-shadow: 0 0 5px #c9c9c9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 20px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: white;
+    user-select: none;
+    /* overflow-x: hidden ; */
+    color: var(--color-dark);
+ 
+
+}
+h1{
+    font-weight: 800;
+    font-size: 1.6rem;
+    }
+    
+    h2{
+        font-size: 1.8rem;
+    }
+    
+    h3{
+        font-size: 0.87rem;
+    }
+    
+    h4{
+        font-size: 0.85rem;
+    }
+    h5{
+        font-size: 0.77rem;
+    }
+    small{
+        font-size: 0.75rem;
+    }
+    hr {
+        border: 1px solid;
+         opacity:70%;
+          width:25%;  border-top-color:#ff000000;    /* Red */
+        border-left-color:#33000000;   /* Black */
+        border-right-color:#0000cc00;  /* Blue */
+    }
+    
+    form  {
+        
+        padding: var(--card-padding);
+        margin-left: 15%;
+        margin-top: 15%;
+        margin-right: 65%;
+        border-radius: 0px;
+        /* box-shadow: var(--box-shadow); */
+        font-size:30px;
+        border-left: #009de05e;
+        border-left-width: 2px;
+        border-style: solid;
+        height: 300px;
+        max-width:15% ;
+        
+
+
+    }
+
+    img {
+        height: 500px;
+        width: 500px;
+        position: absolute;
+        left: 50%;
+        top: 17%;
+    }
+    .password {
+
+        margin-top: 1.5rem;
+
+        border-bottom-left-radius: 10px;
+    
+        border-bottom-width: 1px;
+        font-size:20px;
+        color: black;
+        margin-left: 2rem;
+        height: 40px;
+        border-style: solid;
+        border-left-width: 1px;
+        border-color: rgba(0, 0, 0, 0.35);
+    }
+        .login {
+        margin-top: 0.8rem;
+        background:rgb(230, 230, 230);
+        position: relative;
+        margin-left: 2rem;
+  
+        height: 40px;
+        width: 75px;
+        box-shadow: var(--box-shadow);
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    ::placeholder{
+        color: black;
+        padding-left: 0.5rem;
+        opacity: 50%;
+    
+}
+    .user {
+        height: 40px;
+        
+        font-size:20px;
+        margin-top: 1.8rem;
+        border-style: solid ;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-color: rgba(0, 0, 0, 0.3);
+        margin-left: 2rem;
+        border-bottom-left-radius: 10px;
+      
+    }
+   .my-5 {
+    margin-top:1rem;
+    color: var(--color-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 0.9rem;
+
+
+   }
+
+   a h5{
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    font-weight: 100;
+    color: var(--color-info-dark);
+   }
