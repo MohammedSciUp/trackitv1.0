@@ -10,11 +10,96 @@
 <body>
   
 <div class="container bg-dark text-white">
-  <h1>My First Bootstrap Page</h1>
-  <p>This part is inside a .container class.</p>
-  <p>The .container class provides a responsive fixed width container.</p>
-  <p>Resize the browser window to see that the container width will change at different breakpoints.</p>
+  <table border="1">
+    <tr>
+        <th><p>TO <br> FROM </p>></th>
+    </tr>
+    <tr>
+        <th>&nbsp; <!-- EMPTY --></th>
+        <th>Factory</th>
+        <th>Rusail</th>
+        <th>Sur</th>
+        <th>Sohar</th>
+        <th>Salalah</th>
+    </tr>
+    <tr>
+        <th>Factory</th>
+        <td>Table cell 1</td>
+        <td>Table cell 2</td>
+        <td>Table cell 3</td>
+        <td>Table cell 4</td>
+        <td>Table cell 5</td>
+    </tr>
+    <tr>
+        <th>Rusail</th>
+        <td>Table cell 1</td>
+        <td>Table cell 2</td>
+        <td>Table cell 3</td>
+        <td>Table cell 4</td>
+        <td>Table cell 5</td>
+    </tr>
+    <tr>
+        <td>Sur</td>
+        <td>Table cell 1</td>
+        <td>Table cell 2</td>
+        <td>Table cell 3</td>
+        <td>Table cell 4</td>
+        <td>Table cell 5</td>
+    </tr>
+    <tr>
+        <td>Sohar</td>
+        <td>Table cell 1</td>
+        <td>Table cell 2</td>
+        <td>Table cell 3</td>
+        <td>Table cell 4</td>
+        <td>Table cell 5</td>
+    </tr>
+    <tr>
+      <td>Salalah</td>
+      <td>Table cell 1</td>
+      <td>Table cell 2</td>
+      <td>Table cell 3</td>
+      <td>Table cell 4</td>
+      <td>Table cell 5</td>
+  </tr>
+</table>
 </div>
+
+<div class="missing creates ">
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+
+</div>
+<script>
+  var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];// using django
+  var yValues = [55, 49, 44, 24, 15]; // using django
+  var barColors = ["red", "green","blue","orange","brown"]; // using django
+  
+  new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      title: {
+        display: true,
+        text: "World Wine Production 2018"
+      }
+    }
+  });
+  </script>
+
+
+
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
