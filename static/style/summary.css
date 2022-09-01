@@ -459,7 +459,7 @@ main .insights-2 small {
     display: block;
 }
 
-/* ===================================  Recent Orders / notificatioiin   ===================================== */
+/* ===================================  Recent Orders /    ===================================== */
 
 main .recent-orders {
     margin-top: 2rem;
@@ -507,10 +507,11 @@ main .recent-orders a {
 }
 
 
-/* ===================================  Recent Orders   ===================================== */
+/* ===================================  Recent Orders / notificatioiin   ===================================== */
 
 main .recent-orders {
     margin-top: 2rem;
+    margin-right: 1rem;
 }
 
 main .recent-orders h2 {
@@ -603,6 +604,7 @@ display: none;
 
 .right .recent-updates {
     margin-top: 1rem;
+   
 }
 
 .right .recent-updates h2 {
@@ -633,6 +635,7 @@ display: none;
 
 .right .sales-analytics {
     margin-top: 2rem;
+    margin-right: 1.5rem;
 
 }
 
@@ -666,17 +669,13 @@ display: none;
 
 .right .sales-analytics .item .icon {
     padding: 0.6rem;
-    color: var(--color-white);
-    border-radius: 50%;
-    background: var(--color-primary);
+    color: var(--color-danger);
+   
     display: flex;
 
 }
 
-.right .sales-analytics .item.offline .icon {
-    background: var(--color-danger);
 
-}
 
 .right .sales-analytics .item.customars .icon {
     background: var(--color-success);
