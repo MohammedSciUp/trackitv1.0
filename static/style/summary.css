@@ -318,11 +318,11 @@ main .insights .progress {
     border-radius: 50%;
 }
 
- main .insights svg {
+ /* main .insights svg {
     width: 7rem;
     height: 7rem;
  }
-
+    
  main .insights svg circle {
     fill:none;
     stroke: var(--color-primary);
@@ -332,7 +332,7 @@ main .insights .progress {
   
  }
 
- main .insights .sales svg circle {
+  main .insights .sales svg circle { 
     stroke-dashoffset: -30;
     stroke-dasharray: 200;
  }
@@ -344,7 +344,7 @@ main .insights .progress {
 main .insights .income svg circle {
     stroke-dashoffset: 90;
     stroke-dasharray: 150;
-}
+} */
 
 main .insights .progress .number {
     position: absolute;
@@ -358,7 +358,8 @@ main .insights .progress .number {
 }
 
 main .insights small {
-    margin-top: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: block;
 }
 /* ---------------------- insight-2  ------------------------------- */
