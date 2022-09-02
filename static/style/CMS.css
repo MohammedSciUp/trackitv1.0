@@ -61,10 +61,10 @@ body{
 .container{
     display: grid;
     width: 96%;
-    margin-left :1%;
+    margin: 0 1%;
     gap: 2%;
-    grid-template-columns: 15% 15% 65% 19%;
- 
+    grid-template-columns: 15% 15% 65% 0%;
+
 }
 
 a{
@@ -383,17 +383,17 @@ main .insights-2 > div {
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-redius);
-
+    margin-top: 0.5rem;
     box-shadow: var(--box-shadow);
     transition: all 100ms ease;
-    border: var(--border);
+    border: 1px solid rgba(0, 3, 196, 0.10);
 }
 main .insights-2 > .map {
     background: var(--color-white);
-   width: 1053%;
+   width: 1113%;
     padding-bottom: 35rem;
     border-radius: var(--card-border-redius);
- 
+    margin-top: 0.5rem;
     box-shadow: var(--box-shadow);
     transition: all 100ms ease;
 }
@@ -891,8 +891,8 @@ display: none;
 /* ---------------------------    Media Queries 0    -------------------------- */
 @media screen and (max-width: 1400px) {
     .container {
-        width: 100%;
-        grid-template-columns: 7% 15% 70% 19%;
+        width:100%;
+        grid-template-columns: 7% 15% 70% 0%;
 
     }
 
@@ -921,7 +921,7 @@ display: none;
  
     main .insights-2 > .map {
         background: var(--color-white);
-       width: 835%;
+       width: 1103%;
         padding-bottom: 30rem;
         border-radius: var(--card-border-redius);
         margin-top: 0.5rem;
@@ -1011,8 +1011,8 @@ display: none;
 /* ---------------------------    Media Queries 1    -------------------------- */
 @media screen and (max-width: 1200px) {
     .container {
-        width: 100%;
-        grid-template-columns: 7% 15% 70% 19%;
+        width: 95%;
+        grid-template-columns: 7% 15% 72% 0%;
     
        
     }
@@ -1030,7 +1030,7 @@ display: none;
 
     main .insights-2 > .map {
         background: var(--color-white);
-       width: 722%;
+       width: 856%;
         padding-bottom: 30rem;
         border-radius: var(--card-border-redius);
         margin-top: 0.5rem;
