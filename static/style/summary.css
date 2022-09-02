@@ -25,7 +25,9 @@
     --card-padding:00.5rem;
     --padding-1:1.2rem;
 
-    --box-shadow: 0 0 1px #414141b9;
+    --box-shadow: 0 0 0px #41414100;
+    --border: 1px solid rgba(0, 3, 196, 0.1);
+
 }
 
 *{
@@ -47,7 +49,7 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    font-family: poppins, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.88rem;
     background: var(--color-background);
     user-select: none;
@@ -83,7 +85,7 @@ h2{
 }
 
 h3{
-    font-size: 0.87rem;
+    font-size: 0.95rem;
 }
 
 h4{
@@ -249,10 +251,12 @@ main{
 
 }
 
-main h1{
+main .insights h1{
     margin-top: 0.5rem;
+    margin-left: 1.5rem;
 }
-main .date{
+
+/* main .date{
     display: none;
     background: var(--color-light);
     border-radius: var(--border-redius-1);
@@ -264,7 +268,7 @@ main .date{
 main .date input[type='date']{
     background: transparent;
     color: var(--color-dark);
-}
+} */
 main .insights {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -277,12 +281,14 @@ main .insights > div {
     margin-top: 0.5rem;
     box-shadow: var(--box-shadow);
     transition: all 100ms ease;
-}
+    border:var(--border);
 
+}
+/*
 main .insights > div:hover {
     box-shadow: none;
 }
-/* main .insights > div span {
+ main .insights > div span {
     background: var(--color-primary);
     padding: 0.5rem;
     border-radius: 50%;
@@ -307,7 +313,7 @@ main .insights > div .middle{
 }
 
 main .insights h3 {
-    margin: 0.5rem 0 0.6rem;
+    margin: 0.5rem 0.5rem 0.6rem;
     font-size: 1rem;
 }
 
@@ -361,6 +367,7 @@ main .insights small {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: block;
+    margin-left: 0.5rem;
 }
 /* ---------------------- insight-2  ------------------------------- */
 main .insights-2 {
@@ -375,6 +382,7 @@ main .insights-2 > div {
     margin-top: 0.5rem;
     box-shadow: var(--box-shadow);
     transition: all 100ms ease;
+    border: var(--border);
 }
 
 main .insights-2 > div:hover {
