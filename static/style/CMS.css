@@ -61,9 +61,10 @@ body{
 .container{
     display: grid;
     width: 96%;
-    margin: 0 1%;
+    margin-left :1%;
     gap: 2%;
     grid-template-columns: 15% 15% 65% 19%;
+ 
 }
 
 a{
@@ -382,17 +383,17 @@ main .insights-2 > div {
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-redius);
-    margin-top: 0.5rem;
+
     box-shadow: var(--box-shadow);
     transition: all 100ms ease;
-    border: 1px solid rgba(0, 3, 196, 0.10);
+    border: var(--border);
 }
 main .insights-2 > .map {
     background: var(--color-white);
    width: 1053%;
     padding-bottom: 35rem;
     border-radius: var(--card-border-redius);
-    margin-top: 0.5rem;
+ 
     box-shadow: var(--box-shadow);
     transition: all 100ms ease;
 }
