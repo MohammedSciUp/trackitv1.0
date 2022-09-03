@@ -4,7 +4,7 @@
 
 /* ---------------------------    ROOT VARIABLES    -------------------------- */
 :root {
-    --color-primary: #009de0;
+    --color-primary: #002581;
     --color-danger: #ff3232;
     --color-success: #00be7f;
     --color-warning: #ffbb55;
@@ -17,16 +17,17 @@
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
 
-    --card-border-redius: 5px;
+    --card-border-redius: 3px;
     --border-redius-1: 0.4rem;
     --border-redius-2: 0.8rem;
     --border-redius-3: 1.2rem;
 
-    --card-padding:00.5rem;
+    --card-padding:1rem;
     --padding-1:1.2rem;
 
-    --box-shadow: 0 0 0px #41414100;
-    --border: 1px solid rgba(0, 3, 196, 0.1);
+
+    --border: 1px solid #00258121;
+    --gap: 2rem;
 
 }
 
@@ -49,22 +50,20 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
     font-size: 0.88rem;
     background: var(--color-background);
     user-select: none;
     overflow-x: hidden ;
     color: var(--color-dark);
-
-}
-
-.container{
     display: grid;
-    width: 96%;
-    margin: 0 auto;
-    gap: 1.8rem;
-    grid-template-columns: 14rem auto 23rem;
+    gap: 2rem;
+    grid-template-columns: 100%   ;
+    grid-template-rows:  95rem  ;
+    
 }
+
+
 
 a{
     color: var(--color-dark);
@@ -76,7 +75,7 @@ img{
 }
 
 h1{
-font-weight: 800;
+font-weight: 550;
 font-size: 1.6rem;
 }
 
@@ -135,10 +134,16 @@ b{
     color: var(--color-warning);
 }
 
-
+/* ================================================  SIDEBAR  ======================================================= */
 
 aside{
 height: 100vh;
+background: var(--color-white);
+border: var(--border);
+position: fixed;
+ width: 15rem; 
+ z-index: 1000;
+
 
 }
 
@@ -154,11 +159,11 @@ aside .top{
 aside .logo {
     display: flex;
     gap: 0.8rem;
-    margin-left: 4.5rem;
+    margin-left: 1rem;
 }
 
 aside .logo img{
-    width: 4rem;
+    width: 3rem;
     height: 4rem;
 }
 
@@ -166,7 +171,6 @@ aside .close{
     display: none;
 }
 
-/* ================================================  SIDEBAR  ======================================================= */
 
 
 aside .sidebar{
@@ -176,6 +180,7 @@ flex-direction: column;
 height: 86vh;
 position: relative;
 top: 3rem;
+
 }
 
 aside h3{
@@ -241,9 +246,26 @@ aside .sidebar .message-count{
     font-size: 11px;
 border-radius: var(--border-redius-1 );
 }
+/* ---------------=-=-=-=-=------=-  navbar   ============-=-=-=-=-==--=-=-===========------------- */
 
-/* =====================================   MAIN 1  ========================================= */
-
+.navbar {
+    padding: var(--card-padding);
+    height: 5rem;
+    width: 100%;
+    background: var(--color-white);
+    border: var(--border);
+    position: fixed;
+}
+/* =====================================  container   ========================================= */
+.container{
+    display: grid;
+    width: 105%;
+height: 100%;
+    gap: var(--gap);
+    grid-template-columns: 15rem 40% 40% ;
+    margin-top: 6rem;
+    padding-right:7rem ;
+}
 main{
     margin-top: 1rem;
     margin-bottom: 3rem;
@@ -271,18 +293,19 @@ main .date input[type='date']{
 } */
 main .insights {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 1.6rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
 }
 main .insights > div {
     background: var(--color-white);
     padding: var(--card-padding);
+width: 100% ;
+height: 12rem;
     border-radius: var(--card-border-redius);
-    margin-top: 0.5rem;
-    box-shadow: var(--box-shadow);
+   
+    /* box-shadow: var(--box-shadow); */
     transition: all 100ms ease;
-    border:var(--border);
-
+    border: var(--border);
 }
 /*
 main .insights > div:hover {
@@ -313,7 +336,7 @@ main .insights > div .middle{
 }
 
 main .insights h3 {
-    margin: 0.5rem 0.5rem 0.6rem;
+
     font-size: 1rem;
 }
 
@@ -370,22 +393,28 @@ main .insights small {
     margin-left: 0.5rem;
 }
 /* ---------------------- insight-2  ------------------------------- */
-main .insights-2 {
+.container-2{
+    grid-template-columns: 15.8rem 85% 0% ;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.6rem;
+    gap: 1.5rem;
+} 
+.insights-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
 }
-main .insights-2 > div {
+ .insights-2 > div {
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-redius);
-    margin-top: 0.5rem;
+    
     box-shadow: var(--box-shadow);
     transition: all 100ms ease;
     border: var(--border);
+    height: 25rem   ;
 }
 
-main .insights-2 > div:hover {
+ .insights-2 > div:hover {
     box-shadow: none;
 }
 /* main .insights-2 > div span {
@@ -404,7 +433,7 @@ main .insights-2 >.income span {
     background: var(--color-success);
 } */
 
-main .insights-2 > div .middle{
+ .insights-2 > div .middle{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -412,24 +441,24 @@ main .insights-2 > div .middle{
 
 }
 
-main .insights-2 h3 {
+ .insights-2 h3 {
     margin: 0.5rem 0 0.6rem;
     font-size: 1rem;
 }
 
-main .insights-2 .progress {
+ .insights-2 .progress {
     position: relative;
     width: 92px;
     height: 92px;
     border-radius: 50%;
 }
 
- main .insights-2 svg {
+  .insights-2 svg {
     width: 7rem;
     height: 7rem;
  }
 
- main .insights-2 svg circle {
+  .insights-2 svg circle {
     fill:none;
     stroke: var(--color-primary);
     stroke-width:5 ;
@@ -438,21 +467,21 @@ main .insights-2 .progress {
   
  }
 
- main .insights-2 .sales svg circle {
+  .insights-2 .sales svg circle {
     stroke-dashoffset: -30;
     stroke-dasharray: 200;
  }
- main .insights-2 .expenses svg circle {
+  .insights-2 .expenses svg circle {
     stroke-dashoffset: 30;
     stroke-dasharray: 200;
 }
 
-main .insights-2 .income svg circle {
+ .insights-2 .income svg circle {
     stroke-dashoffset: 90;
     stroke-dasharray: 150;
 }
 
-main .insights-2 .progress .number {
+ .insights-2 .progress .number {
     position: absolute;
     top: 0;
     left: 0;
@@ -463,11 +492,136 @@ main .insights-2 .progress .number {
     align-items: center;
 }
 
-main .insights-2 small {
+ .insights-2 small {
     margin-top: 0.3rem;
     display: block;
 }
+/* --------------------------------------- insight-3  ------------------------------------------ */
 
+.insights-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gap);
+    margin-top: 6.7rem;
+    width: 100%;
+    height: 0%;
+   
+}
+
+ .insights-3 > div {
+    
+    background: var(--color-white);
+   padding: var(--card-padding);
+ width:100%;
+ height: 26.1rem;
+    border-radius: var(--card-border-redius);
+  border: var(--border); 
+    /* box-shadow: var(--box-shadow); */
+    transition: all 100ms ease;
+    
+}
+.insights-3 .chart .chart-container {
+padding: var(--card-padding);
+margin-right: 5%;
+  width: 95%;
+  height: 20rem;
+} 
+.insights-3 .chart-2 .chart-container-2 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+      
+  
+    width: 90%;
+
+  } 
+/*
+main .insights > div:hover {
+    box-shadow: none;
+}
+ main .insights > div span {
+    background: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+} 
+
+main .insights >.expenses span {
+    background: var(--color-danger);
+}
+
+main .insights >.income span {
+    background: var(--color-success);
+} 
+
+ .insights-3 > div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+*/
+
+ .insights-3 h3 {
+ 
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+ .insights-3 .progress {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+ /* main .insights svg {
+    width: 7rem;
+    height: 7rem;
+ }
+    
+ main .insights svg circle {
+    fill:none;
+    stroke: var(--color-primary);
+    stroke-width:5 ;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+  
+ }
+
+  main .insights .sales svg circle { 
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+ }
+ main .insights .expenses svg circle {
+    stroke-dashoffset: 30;
+    stroke-dasharray: 200;
+}
+
+main .insights .income svg circle {
+    stroke-dashoffset: 90;
+    stroke-dasharray: 150;
+} */
+
+ .insights-3 .progress .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .insights-3 small {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
 /* ===================================  Recent Orders /    ===================================== */
 
 main .recent-orders {
@@ -605,8 +759,9 @@ display: none;
 }
     .right .top .profile {
         display: flex;
-        gap: 2rem;
+      
         text-align: right;
+        margin-right:2rem;
     }
 
 /* ==========================     RECENT UPDATES      ============================ */
@@ -743,7 +898,7 @@ display: none;
   .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid #00B4CC;
+    border: 1px solid var(--color-primary);
     background:var(--color-primary);
     text-align: center;
     color: #fff;
@@ -757,7 +912,7 @@ display: none;
     width: 200px;
     padding: cal(var(--card-padding)+1rem);
     border-radius: var(--card-border-redius);
-    box-shadow: var(--box-shadow);
+    border: var(--border);
     margin-bottom: 1.2rem;
   }
  
@@ -774,7 +929,16 @@ display: none;
         grid-template-columns: repeat(5, 1fr);
         gap: 1.6rem;
     }
-
+    aside{
+        height: 100vh;
+        background: var(--color-white);
+        border: var(--border);
+        position: fixed;
+         width: 5.7rem; 
+         z-index: 1000;
+        
+        
+        }
     aside .logo h2 {
         display: none;
 
