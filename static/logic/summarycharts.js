@@ -15,22 +15,30 @@ const myChart = new Chart(ctx, {
         backgroundColor: "rgba(0,0,255,1.0)",
         borderColor: "rgba(0,0,255,0.1)",
         data: yValues,
-       borderWidth:10,
-       lineWidth:3,
-       responsive:true,
+      
+      
+    
       }]
     },
     options:{
-        scales: {
-            yAxes: [{ ticks:{
-                beginAtZero: true}
-            }]
-        ,
-        xAxes:[{ ticks:{
-            beginAtZero: true}
-        }]
+      maintainAspectRatio: false,
+      responsive: true,
+      scales: {
+				y: {
+					beginAtZero: true,
+					grid: {
+						color: '#000',
+						drawBorder: false 
+					}
+				},
+				x: {
+					grid: {
+						display: false,
+					}
+				}
+			},       
     }}
-  });
+ );
 
   new Chart("NonMissingChart", {
     type: "line",

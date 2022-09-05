@@ -153,3 +153,7 @@ settingBtnjs.addEventListener('click', () => {
         sideMenu.style.display = 'none'
     }
     )
+
+    function myFunction() {
+        document.getElementById("class").style.resize = "both";
+      }

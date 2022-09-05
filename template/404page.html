@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="path/to/chartjs/dist/chart.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+    <link rel="stylesheet" href="{% static 'style\sumchecking.css' %}">
+    <title>CMS & IVMS</title>
+</head>
+<body>
+    <div class="cms-chart-container-1">
+        
+       
+        <canvas id="MissingChart" ></canvas>
+    
+        </div>
+    <!-- <div class="grid">
+    
+
+        <canvas id="chart"></canvas>
+      
+   
+    
+    </div> -->
+    <style>
+
+/* html {
+	--color-1: #49708A;
+	--color-2: #D0E0EB;
+	font-family: sans-serif;
+}
+* {
+	margin: 0.1rem;
+	padding: 0.1rem;
+	font-family: Arial, Helvetica, sans-serif;
+}*/
+
+.cms-chart-container-1 {
+	display: grid;
+	gap: 1em;
+	grid-template-rows: min-content minmax(0, 1fr) min-content;
+	grid-template-columns: 1fr minmax(0, 3fr);
+	grid-template-areas: "a h"
+											 "a c"
+											 "a f";
+	height: calc(100vh - 2em);
+	width: calc(100vw - 2em); 
+	margin: 1em;} 
+
+    </style>
+    <script>
+        const ctx = document.getElementById('MissingChart');
+const chart = new Chart(ctx, {
+		type: 'bar',
+		data: {
+				labels: ['Nerds', 'Runts', 'Jolly Ranchers', 'Sweet Tarts', 'Lemonheads', 'Necco Wafers', 'Gobstoppers'],
+				datasets: [{
+					label: '# of Votes',
+					data: [12, 19, 22, 5, 2, 1, 10],
+					backgroundColor: '#49708A'
+				}]
+		},
+		options: {
+      responsive: true, // not necessary, default is `true`,
+      maintainAspectRatio: false, // default is `true`, default `aspectRatio` is 2
+			scales: {
+				y: {
+					beginAtZero: true,
+					grid: {
+						color: '#000',
+						drawBorder: false 
+					}
+				},
+				x: {
+					grid: {
+						display: false,
+					}
+				}
+			},       
+			plugins: {
+				legend: {
+					display: false
+				}
+			}
+		}
+});
+    </script>
+</body>
+</html>

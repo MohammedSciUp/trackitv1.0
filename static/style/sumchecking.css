@@ -27,7 +27,7 @@
 
 
     --border: 1px solid #00258121;
-    --gap: 2rem;
+    --gap: 1.5rem;
 
 }
 
@@ -141,8 +141,7 @@ position: fixed;
  width: 15rem; 
  z-index: 1000;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
-
-
+ overflow: hidden;
 
 }
 
@@ -223,7 +222,7 @@ aside .sidebar > div:last-child{
 
 
 aside .sidebar div:hover span {
-    margin-left: 1rem;
+    margin-left: 0.2rem;
 }
 
 aside .sidebar .message-count{
@@ -502,7 +501,7 @@ display: none;
     display: grid;
     gap: 2rem;
     grid-template-columns: 100%   ;
-    grid-template-rows:  110rem  ;
+    grid-template-rows:  113rem  ;
 }
 .cms-container-1{
     display: grid;
@@ -531,24 +530,42 @@ height: 100%;
     gap: var(--gap);
 }
 .cms-insights-1 > div {
+    display: grid;
+	gap: 1em;
+	grid-template-rows: min-content minmax(0, 1fr) min-content;
+	grid-template-columns: 1fr minmax(0, 3fr);
+	grid-template-areas: "a h"
+						 "a c"
+						 "a f";
+	height: calc(50vh - 2em);
+	width: calc(26.5vw - 2em); /* not necessary, but just to be explicit */
+	
     background: var(--color-white);
-    padding: var(--card-padding);
-width: 100% ;
-height: 20rem;
-    border-radius: var(--card-border-redius);
-   
-    /* box-shadow: var(--box-shadow); */
-    transition: all 100ms ease;
     border: var(--border);
+    border-radius: var(--card-border-redius);
+    padding: var(--card-padding);
 }
 .cms-insights-1 .cms-missing-indicator-1 {
-    height:10rem;
+    display: grid;
+	gap: 1em;
+	grid-template-rows: min-content minmax(0, 1fr) min-content;
+	grid-template-columns: 1fr minmax(0, 3fr);
+	grid-template-areas: "a h"
+						 "a c"
+						 "a f";
+	height: calc(25vh - 2em);
+	width: calc(26.5vw - 2em); /* not necessary, but just to be explicit */
+	border-radius: var(--card-border-redius);
+    background: var(--color-white);
+    border: var(--border);
+
+    padding: var(--card-padding);
 }
 
 /* ---------------------- insight-2  ------------------------------- */
 
 .cms-container-2{
-    grid-template-columns: 15.8rem 83%  ;
+    grid-template-columns: 15.8rem 30%  ;
     display: grid;
     gap: 1.5rem;
     
@@ -557,14 +574,28 @@ height: 20rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: var(--gap);
-    height: 43rem   ;
-    border: var(--border);
-    background: var(--color-white);
-    padding: var(--card-padding);
-    border-radius: var(--card-border-redius);
+
+  
+   
 }
 
+.cms-insights-2 .cms-map-container-1 {
 
+    display: grid;
+	gap: 1em;
+	grid-template-rows: min-content minmax(0, 1fr) min-content;
+	grid-template-columns: 1fr minmax(0, 3fr);
+	grid-template-areas: "a h"
+						 "a c"
+						 "a f";
+	height: calc(84.5vh - 2em);
+	width: calc(79.3vw - 2em); /* not necessary, but just to be explicit */
+	
+    background: var(--color-white);
+    border-radius: var(--card-border-redius);
+border: var(--border);
+    padding: var(--card-padding);
+}
 
 .cms-insights-2 h3 {
     margin: 0.5rem 0 0.6rem;
@@ -581,30 +612,36 @@ height: 20rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: var(--gap);
-    margin-top: 6.75rem;
-    width: 100%;
-    height: 0%;
-   
+
+	padding: 0;
+    margin-top:6.8rem;
+
 }
 
-.cms-insights-3 > div {
+
+
+.cms-insights-3 > div  {
     
+    display: grid;
+	gap: 1em;
+	grid-template-rows: min-content minmax(0, 1fr) min-content;
+	grid-template-columns: 1fr minmax(0, 3fr);
+	grid-template-areas: "a h"
+						 "a c"
+						 "a f";
+	height: calc(63.3vh - 2em);
+	width: calc(53vw - 2em); /* not necessary, but just to be explicit */
+	
     background: var(--color-white);
-   padding: var(--card-padding);
- width:100%;
- height: 31rem;
+    border: var(--border);
+
+    padding: var(--card-padding);
     border-radius: var(--card-border-redius);
-  border: var(--border); 
-    /* box-shadow: var(--box-shadow); */
-    transition: all 100ms ease;
     
 }
-.cms-chart-container-1 {
-padding: var(--card-padding);
-margin-right: 5%;
-  width: 95%;
-  height: 20rem;
-} 
+
+
+
 .cms-chart-container-2 {
     margin-top: 1rem;
     margin-left: 2rem;
