@@ -1,5 +1,6 @@
 import pyrebase
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
@@ -39,6 +40,8 @@ firebaseConfig = {
   'appId': "1:245588365374:web:333351dfcefc78681c816f",
   'measurementId': "G-M3QW5Y6QFL"
 =======
+=======
+>>>>>>> Stashed changes
 
 # firebase things .. 
 firebaseConfig = {
@@ -50,6 +53,9 @@ firebaseConfig = {
   'messagingSenderId': "41957710201",
   'appId': "1:41957710201:web:175ebf5003b8a32c1937a8",
   'measurementId': "G-5FGQW7JYJQ"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 };
 firebase = pyrebase.initialize_app(firebaseConfig)
@@ -59,6 +65,7 @@ db = firebase.database()
 # naming variables 
 
 def fromfirebase(x):
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     
     if x == 'driver_iD':
@@ -88,6 +95,8 @@ def fromfirebase(x):
     elif x == 'tags':
         return(db.child("TestStation").child("tags").get())
 =======
+=======
+>>>>>>> Stashed changes
     if x == 'driver_iD':
         return (db.child("vms").child("driver_iD").get().val())
     elif x == 'co_driver_iD':
@@ -110,11 +119,15 @@ def fromfirebase(x):
         return (db.child("vms").child("longitude").get().val())
     elif x == 'number':
         return (db.child("tags").child("number").get().val())
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     else:
         return('invalid input !!')
 
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
 
@@ -145,6 +158,9 @@ teststation = {
 }
 
 dbfs.collection('stations').document('teststation').set(teststation)
+=======
+def 
+>>>>>>> Stashed changes
 =======
 def 
 >>>>>>> Stashed changes
