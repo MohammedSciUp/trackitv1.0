@@ -9,7 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="path/to/chartjs/dist/chart.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="{% static 'style\sumchecking.css' %}">
     <title>CMS & IVMS</title>
 </head>
@@ -437,11 +440,24 @@
         <!-- ---------------------------------------------------------------------- -->
         <div class="cms-cms-box-2">
  
-             <h1>Dashboard</h1>
-          <br>
-             <h1>CMS</h1>
+          
+             <h1>Crate Mangement System</h1>
              <br>
-           
+             <br>
+             <input class="daterange" type="text" name="date" value="09/01/2022 - 09/01/2027" />
+             <form >
+                <label for="cars">Location:</label>
+                <select name="location" id="location">
+                  <option value="volvo">Total</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+              </form>
+           <br>
+           <br>
  
              <!-- <div class="date">middle
                  <input type="date">

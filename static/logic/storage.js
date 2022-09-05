@@ -154,6 +154,5 @@ settingBtnjs.addEventListener('click', () => {
     }
     )
 
-    function myFunction() {
-        document.getElementById("class").style.resize = "both";
-      }
+    
+$('input[name="date"]').daterangepicker();
