@@ -1,4 +1,5 @@
 import pyrebase
+<<<<<<< Updated upstream
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
@@ -37,6 +38,19 @@ firebaseConfig = {
   'messagingSenderId': "245588365374",
   'appId': "1:245588365374:web:333351dfcefc78681c816f",
   'measurementId': "G-M3QW5Y6QFL"
+=======
+
+# firebase things .. 
+firebaseConfig = {
+  'apiKey': "AIzaSyCvMdHT1x0DWUrEmytHyVFS8MKY7nITLJw",
+  'authDomain': "tackitpro.firebaseapp.com",
+  'databaseURL': "https://tackitpro-default-rtdb.firebaseio.com",
+  'projectId': "tackitpro",
+  'storageBucket': "tackitpro.appspot.com",
+  'messagingSenderId': "41957710201",
+  'appId': "1:41957710201:web:175ebf5003b8a32c1937a8",
+  'measurementId': "G-5FGQW7JYJQ"
+>>>>>>> Stashed changes
 };
 firebase = pyrebase.initialize_app(firebaseConfig)
 # #realtime database 
@@ -45,6 +59,7 @@ db = firebase.database()
 # naming variables 
 
 def fromfirebase(x):
+<<<<<<< Updated upstream
     
     if x == 'driver_iD':
         return (db.child("TestStation").child("driver_iD").get().val())
@@ -72,10 +87,35 @@ def fromfirebase(x):
         return (db.child("TestStation").child("gpsinfo").child("DATE").get().val())
     elif x == 'tags':
         return(db.child("TestStation").child("tags").get())
+=======
+    if x == 'driver_iD':
+        return (db.child("vms").child("driver_iD").get().val())
+    elif x == 'co_driver_iD':
+        return (db.child("vms").child("co_driver_iD").get().val())
+    elif x == 'seatbelt':
+        return (db.child("vms").child("seatbelt").get().val())
+    elif x == 'engine_temprature':
+        return (db.child("vms").child("engine_temprature").get().val())
+    elif x == 'fuel_level':
+        return (db.child("vms").child("fuel_level").get().val())
+    elif x == 'refrigerator_temprature':
+        return (db.child("vms").child("refrigerator_temprature").get().val())
+    elif x == 'refrigerator_temprature':
+        return (db.child("vms").child("refrigerator_temprature").get().val())
+    elif x == 'speed':
+        return (db.child("vms").child("speed").get().val())
+    elif x == 'latitude':
+        return (db.child("vms").child("latitude").get().val())
+    elif x == 'longitude':
+        return (db.child("vms").child("longitude").get().val())
+    elif x == 'number':
+        return (db.child("tags").child("number").get().val())
+>>>>>>> Stashed changes
     else:
         return('invalid input !!')
 
 
+<<<<<<< Updated upstream
 
 
 # Setup
@@ -105,3 +145,6 @@ teststation = {
 }
 
 dbfs.collection('stations').document('teststation').set(teststation)
+=======
+def 
+>>>>>>> Stashed changes
