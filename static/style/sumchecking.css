@@ -212,23 +212,6 @@ aside .sidebar > div:last-child{
     width: 100%;
 }
 
-/* .sidebar .active {
-    background: var(--color-light);
-    color: var(--color-primary);
-    margin-left:0rem ;
-}
-
-.sidebar .active:before {
-    content: "";
-    width: 6px;
-    height: 100%;
-    background: var(--color-primary);
-}
-
-.sidebar .active span{
-    color: var(--color-primary);
-    margin-left: calc(1rem - 6px);
- } */
 
 
  aside .sidebar > div:hover {
@@ -282,6 +265,15 @@ height: 100%;
     margin-top: 6rem;
     padding-right:7rem ;
 }
+.cms-container-1{
+    display: grid;
+    width: 105%;
+height: 100%;
+    gap: var(--gap);
+    grid-template-columns: 15rem 40% 40% ;
+ padding-top: 6rem;
+    padding-right:7rem ;
+}
 .summary-cms-box-2{
     margin-top: 1rem;
     margin-bottom: 3rem;
@@ -294,19 +286,6 @@ height: 100%;
     margin-left: 1.5rem;
 }
 
-/* main .date{
-    display: none;
-    background: var(--color-light);
-    border-radius: var(--border-redius-1);
-    margin-top: 1rem;
-    padding: 0.5rem 1.6rem;
-
-}
-
-main .date input[type='date']{
-    background: transparent;
-    color: var(--color-dark);
-} */
 .summary-insights-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -323,90 +302,9 @@ height: 12rem;
     transition: all 100ms ease;
     border: var(--border);
 }
-/*
-main .insights > div:hover {
-    box-shadow: none;
-}
- main .insights > div span {
-    background: var(--color-primary);
-    padding: 0.5rem;
-    border-radius: 50%;
-    color: var(--color-white);
-    font-size: 2rem;
-} 
 
-main .insights >.expenses span {
-    background: var(--color-danger);
-}
-
-main .insights >.income span {
-    background: var(--color-success);
-} 
-
-main .insights > div .middle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
-}*/
-
-main .insights h3 {
-
-    font-size: 1rem;
-}
-
-/* main .insights .progress {
-    position: relative;
-    width: 92px;
-    height: 92px;
-    border-radius: 50%;
-} */
- /* main .insights svg {
-    width: 7rem;
-    height: 7rem;
- }
-    
- main .insights svg circle {
-    fill:none;
-    stroke: var(--color-primary);
-    stroke-width:5 ;
-    stroke-linecap: round;
-    transform: translate(5px, 5px);
-  
- }
-
-  main .insights .sales svg circle { 
-    stroke-dashoffset: -30;
-    stroke-dasharray: 200;
- }
- main .insights .expenses svg circle {
-    stroke-dashoffset: 30;
-    stroke-dasharray: 200;
-}
-
-main .insights .income svg circle {
-    stroke-dashoffset: 90;
-    stroke-dasharray: 150;
-} */
-/* main .insights .progress .number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-.summary-insights-1 small {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: block;
-    margin-left: 0.5rem;
-}
 /* ---------------------- insight-2  ------------------------------- */
+
 .summary-container-2{
     grid-template-columns: 15.8rem 80% 0% ;
     display: grid;
@@ -428,83 +326,11 @@ main .insights .income svg circle {
     height: 25rem   ;
 }
 
-/* .summary-insights-2 > div:hover {
-    box-shadow: none;
-} */
-/* main .insights-2 > div span {
-    background: var(--color-primary);
-    padding: 0.5rem;
-    border-radius: 50%;
-    color: var(--color-white);
-    font-size: 2rem;
-}
-
-main .insights-2 >.expenses span {
-    background: var(--color-danger);
-}
-
-main .insights-2 >.income span {
-    background: var(--color-success);
-} */
-/* 
- .insights-2 > div .middle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
-} */
 
 .summary-insights-2 h3 {
     margin: 0.5rem 0 0.6rem;
     font-size: 1rem;
 }
-/* 
- .insights-2 .progress {
-    position: relative;
-    width: 92px;
-    height: 92px;
-    border-radius: 50%;
-}
-
-  .insights-2 svg {
-    width: 7rem;
-    height: 7rem;
- }
-
-  .insights-2 svg circle {
-    fill:none;
-    stroke: var(--color-primary);
-    stroke-width:5 ;
-    stroke-linecap: round;
-    transform: translate(5px, 5px);
-  
- }
-
-  .insights-2 .sales svg circle {
-    stroke-dashoffset: -30;
-    stroke-dasharray: 200;
- }
-  .insights-2 .expenses svg circle {
-    stroke-dashoffset: 30;
-    stroke-dasharray: 200;
-}
-
- .insights-2 .income svg circle {
-    stroke-dashoffset: 90;
-    stroke-dasharray: 150;
-}
-
- .insights-2 .progress .number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
  .insights-2 small {
     margin-top: 0.3rem;
@@ -584,52 +410,7 @@ main .insights >.income span {
     text-transform: uppercase;
     font-size: 1.1rem;
 }
-/* 
-.summary-insights-3.progress {
-    position: relative;
-    width: 92px;
-    height: 92px;
-    border-radius: 50%;
-} */
 
- /* main .insights svg {
-    width: 7rem;
-    height: 7rem;
- }
-    
- main .insights svg circle {
-    fill:none;
-    stroke: var(--color-primary);
-    stroke-width:5 ;
-    stroke-linecap: round;
-    transform: translate(5px, 5px);
-  
- }
-
-  main .insights .sales svg circle { 
-    stroke-dashoffset: -30;
-    stroke-dasharray: 200;
- }
- main .insights .expenses svg circle {
-    stroke-dashoffset: 30;
-    stroke-dasharray: 200;
-}
-
-main .insights .income svg circle {
-    stroke-dashoffset: 90;
-    stroke-dasharray: 150;
-} */
-
-/* .summary-insights-3 .progress .number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .summary-insights-3 small {
     margin-top: 1rem;
@@ -676,11 +457,6 @@ display: none;
     justify-content: center;
 }
 
-/* .right .theme-toggler span.active {
-    background: var(--color-primary);
-    color: white;
-    border-radius: var(--border-redius-1);
-} */
     .right .top .profile {
         display: flex;
       
@@ -752,8 +528,142 @@ cms{
     grid-template-columns: 100%   ;
     grid-template-rows:  95rem  ;
 }
+.cms-container-1{
+    display: grid;
+    width: 105%;
+height: 100%;
+    gap: var(--gap);
+    grid-template-columns: 15rem 25% 40% ;
+ padding-top: 6rem;
+    padding-right:7rem ;
+}
+.cms-cms-box-2{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    
 
+}
+
+.cms-insights-1 h1{
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.cms-insights-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gap);
+}
+.cms-insights-1 > div {
+    background: var(--color-white);
+    padding: var(--card-padding);
+width: 100% ;
+height: 12rem;
+    border-radius: var(--card-border-redius);
+   
+    /* box-shadow: var(--box-shadow); */
+    transition: all 100ms ease;
+    border: var(--border);
+}
+
+/* ---------------------- insight-2  ------------------------------- */
+
+.cms-container-2{
+    grid-template-columns: 15.8rem 80% 0% ;
+    display: grid;
+    gap: 1.5rem;
+} 
+.cms-insights-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+}
+.cms-insights-2 > div {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-redius);
+    
+    box-shadow: var(--box-shadow);
+    transition: all 100ms ease;
+    border: var(--border);
+    height: 25rem   ;
+}
+
+
+.cms-insights-2 h3 {
+    margin: 0.5rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+ .insights-2 small {
+    margin-top: 0.3rem;
+    display: block;
+}
+/* --------------------------------------- insight-3  ------------------------------------------ */
+
+.cms-insights-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gap);
+    margin-top: 6.75rem;
+    width: 100%;
+    height: 0%;
+   
+}
+
+.cms-insights-3 > div {
+    
+    background: var(--color-white);
+   padding: var(--card-padding);
+ width:100%;
+ height: 26rem;
+    border-radius: var(--card-border-redius);
+  border: var(--border); 
+    /* box-shadow: var(--box-shadow); */
+    transition: all 100ms ease;
+    
+}
+.cms-chart-container-1 {
+padding: var(--card-padding);
+margin-right: 5%;
+  width: 95%;
+  height: 20rem;
+} 
+.cms-chart-container-2 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+      
+  
+    width: 90%;
+
+  } 
+
+
+.cms-insights-3 h3 {
  
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+
+.cms-insights-3 small {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+/* --------------------------------------ivms------------------------------------- */
+.ivmsBtn {
+    display: none;
+}
+.ivms{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 100%   ;
+    grid-template-rows:  95rem  ;
+}
+
  
 /* ---------------------------    Media Queries    -------------------------- */
 

@@ -3,7 +3,7 @@ var xValues = [ "January","February","March","April","May","June",
 "July","August","September","October","November","December"];
 var yValues = [145,124,175,254,271,301,241,199,230,200,145,101];
 
-const ctx = document.getElementById('summaryMissingChart')
+const ctx = document.getElementById('MissingChart')
 const myChart = new Chart(ctx, {
     type: "line",
     data: {
@@ -32,7 +32,7 @@ const myChart = new Chart(ctx, {
     }}
   });
 
-  new Chart("summaryNonMissingChart", {
+  new Chart("NonMissingChart", {
     type: "line",
     data: {
       labels: xValues,

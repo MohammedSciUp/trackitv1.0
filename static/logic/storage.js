@@ -1,8 +1,8 @@
 // target
 const summaryShow = document.querySelector(".summaryBtn");
 const cmsShow = document.querySelector(".cmsBtn");
-const ivmsShow = document.querySelector(".ivms");
-const settingShow = document.querySelector(".setting");
+const ivmsShow = document.querySelector(".ivmsBtn");
+const settingShow = document.querySelector(".settingBtn");
 
 //Dashboard
 const DashboardActive = document.querySelector(".Dashboard");
@@ -141,3 +141,15 @@ settingBtnjs.addEventListener('click', () => {
 
     })
 
+    const sideMenu = document.querySelector("aside");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeBtn = document.querySelector("#close-btn");
+    
+    menuBtn.addEventListener('click', () => {
+        sideMenu.style.display = 'block'
+    })
+    
+    closeBtn.addEventListener('click', () => {
+        sideMenu.style.display = 'none'
+    }
+    )
