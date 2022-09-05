@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="path/to/chartjs/dist/chart.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="/static/style/sumchecking.css">
-    <link rel="stylesheet" href="{% static 'style/summary.css' %}">
+   
+    <link rel="stylesheet" href="{% static 'style\sumchecking.css' %}">
     <title>CMS & IVMS</title>
 </head>
 <body>
@@ -102,7 +103,9 @@
 </div>
 
 <div class="summaryBtn"">
-<div class="summary">
+
+  <div class="summary">
+
     <div class="summary-container-1">
            <!-------------------------------------------- ### Sidebar copy in all pages ###--------------------------------->
     
@@ -259,7 +262,6 @@
     </div>
         </div>  
     </div> 
-<!-- ---------------------------------------------------------------------- -->
 
     <div class="summary-container-2">
     <div class="summary-ivms-box-1">
@@ -413,14 +415,334 @@
     </div>
     <div class="summary-ivms-box-3"></div> 
     </div> 
+
     <div class="summary-container-3">
     </div>
-</div>
+
+  </div>
+
 </div>
 
    
 <div class="cmsBtn">
-    <div class="test"></div>
+    <div class="cms">
+      
+ 
+        <div class="summary-container-1">
+            <!-------------------------------------------- ### Sidebar copy in all pages ###--------------------------------->
+     
+         <!-- ---------------------------------------------  END OF sidebar  --------------------------------------------------- -->
+        <div class="summary-cms-box-1">
+ 
+        </div>
+        <!-- ---------------------------------------------------------------------- -->
+        <div class="summary-cms-box-2">
+ 
+             <h1>Dashboard</h1>
+          <br>
+             <h1>CMS</h1>
+             <br>
+           
+ 
+             <!-- <div class="date">middle
+                 <input type="date">
+             </div> -->
+ 
+             <div class="summary-insights-1">
+                 <div class="sales">
+                     
+                     
+                         <div class="lef">
+                              <h3>Total</h3>
+                              <!-- number of crates in each location -->
+                              <h1>$25,024</h1> 
+                         </div>
+                        
+                    
+                     <small class="text-muted">Live</small>
+                 </div>
+                 <!-- ----------------------------  END OF SALES  ------------------------------------------->
+                 <div class="expenses">
+                         <div class="lef">
+                              <h3> Factory</h3>
+                              <h1>$14,555</h1>
+                         </div>
+                     <small class="text-muted">Live</small>
+                 </div>
+                 <!-- ----------------------------  END OF EXPANSES  ------------------------------------------->
+                 <div class="income">
+                         <div class="lef">
+                              <h3>Store 1</h3>
+                              <h1>$10,024</h1>
+                         </div>
+                     <small class="text-muted">Live</small>
+                 </div>
+                 <!-- ---------------------------------------------- -->
+                 <div class="income">
+                     <div class="lef">
+                          <h3>Store 2</h3>
+                          <h1>$10,024</h1>
+                     </div>
+                 <small class="text-muted">Live</small>
+             </div>
+             <!-- ---------------------------------------------- -->
+             <div class="income">
+                 <div class="lef">
+                      <h3>Store 3</h3>
+                      <h1>$10,024</h1>
+                 </div>
+             <small class="text-muted">Live</small>
+         </div>
+         <!-- ---------------------------------------------- -->
+         <div class="income">
+             <div class="lef">
+                  <h3>Store 4</h3>
+                  <h1>$10,024</h1>
+             </div>
+         <small class="text-muted">Live</small>
+     </div>
+     <!-- ---------------------------------------------- -->
+     <div class="income">
+                         <div class="lef">
+                             <h3>Store 5</h3>
+                             <h1>$10,024</h1>
+                        </div>
+                    
+                    <small class="text-muted">Live</small>
+                </div>
+                <!-- ---------------------------------------------- -->
+                <div class="income">
+                    <div class="lef">
+                         <h3>Store 6</h3>
+                         <h1>$10,024</h1>
+                    </div>
+                <small class="text-muted">Live</small>
+            </div>
+            <!-- ---------------------------------------------- -->
+            <div class="income">
+             <div class="lef">
+                  <h3>Store 7</h3>
+                  <h1>$10,024</h1>
+             </div>
+         <small class="text-muted">Live</small>
+     </div>
+     <!-- ---------------------------------------------- -->
+     <div class="income">
+         <div class="lef">
+              <h3>Trucks</h3>
+              <h1>$10,024</h1>
+         </div>
+     <small class="text-muted">Live</small>
+ </div>
+ <!-- ---------------------------------------------- -->
+ <div class="income">
+     <div class="lef">
+          <h3>Missing</h3>
+          <h1>$10,024</h1>
+     </div>
+ <small class="text-muted">Live</small>
+ </div>
+ <!-- ---------------------------------------------- -->
+ <div class="income">
+ <div class="lef">
+      <h3>Non-Missing</h3>
+      <h1>$10,024</h1>
+ </div>
+ <small class="text-muted">Live</small>
+ </div>
+ <!-- ---------------------------------------------- -->
+                 <!-- ----------------------------  END OF INCOME  ------------------------------------------->
+             </div>
+             <br>
+             <!-- ----------------------------------   END OF INSIGHTS  ---------------------------------------- -->
+           
+                 
+                 
+         </div>
+ <!-- ----------------------------------------------------------------------------------------- -->
+         <div class="summary-cms-box-3">
+ <div class="summary-insights-3">  
+     <div class="summary-chart-1">
+     <h3>Missing</h3>
+     <div class="summary-chart-container-1">
+       <canvas id="summaryMissingChart" ></canvas>
+       </div>
+     </div>    
+     <div class="summary-chart-2">
+         <h3>Non-Missing</h3>
+         <div class="summary-chart-container-2">
+           <canvas id="summaryNonMissingChart" ></canvas>
+           </div>
+    </div>
+    <div class="summary-chart-3">
+     <h3>Non-Missing</h3>
+     <div class="summary-chart-container-3">
+       <canvas id="summaryunknownMissingChart" ></canvas>
+       </div>
+ </div>
+     
+     </div>
+         </div>  
+     </div> 
+ 
+     <div class="summary-container-2">
+     <div class="summary-ivms-box-1">
+     </div>
+     <div class="summary-ivms-box-2">
+         <h1>IVMS</h1>
+         <br>
+         <div class="summary-search-1">
+             <div class="summary-search-box-1">
+                <input type="text" class="summary-searchTerm" placeholder="search truck number">
+                <button type="submit" class="summary-searchButton">
+                 <span class="material-symbols-sharp">
+                     search
+                     </span>
+               </button>
+             </div>
+          </div>
+       
+ 
+         <!-- <div class="date">
+             <input type="date">
+         </div> -->
+ 
+         <div class="summary-insights-2">
+ 
+             <div class="sales">
+                 
+                 
+                     <div class="lef">
+                          <h3>Total</h3>
+                          <h1>$25,024</h1>
+                     </div>
+                    
+                
+                 <small class="text-muted">Live</small>
+             </div>
+             <!-- ----------------------------  END OF SALES  ------------------------------------------->
+             <div class="expenses">
+                
+                
+                     <div class="lef">
+                          <h3> Factory</h3>
+                          <h1>$14,555</h1>
+                     </div>
+                    
+                 
+                 <small class="text-muted">Live</small>
+             </div>
+             <!-- ----------------------------  END OF EXPANSES  ------------------------------------------->
+             <div class="income">
+                 
+                     <div class="lef">
+                          <h3>Store 1</h3>
+                          <h1>$10,024</h1>
+                     </div>
+                 
+                 <small class="text-muted">Live</small>
+             </div>
+             <!-- ---------------------------------------------- -->
+             <div class="income">
+                 
+                 <div class="lef">
+                      <h3>Store 2</h3>
+                      <h1>$10,024</h1>
+                 </div>
+             
+             <small class="text-muted">Live</small>
+         </div>
+         <!-- ---------------------------------------------- -->
+         <div class="income">
+                 
+             <div class="lef">
+                  <h3>Store 3</h3>
+                  <h1>$10,024</h1>
+             </div>
+         
+         <small class="text-muted">Live</small>
+     </div>
+     <!-- ---------------------------------------------- -->
+     <div class="income">
+         
+         <div class="lef">
+              <h3>Store 4</h3>
+              <h1>$10,024</h1>
+         </div>
+     
+     <small class="text-muted">Live</small>
+ </div>
+ <!-- ---------------------------------------------- --><div class="income">
+                 
+                     <div class="lef">
+                         <h3>Store 5</h3>
+                         <h1>$10,024</h1>
+                    </div>
+                
+                <small class="text-muted">Live</small>
+            </div>
+            <!-- ---------------------------------------------- -->
+            <div class="income">
+                
+                <div class="lef">
+                     <h3>Store 6</h3>
+                     <h1>$10,024</h1>
+                </div>
+            
+            <small class="text-muted">Live</small>
+        </div>
+        <!-- ---------------------------------------------- -->
+        <div class="income">
+                 
+         <div class="lef">
+              <h3>Store 7</h3>
+              <h1>$10,024</h1>
+         </div>
+     
+     <small class="text-muted">Live</small>
+ </div>
+ <!-- ---------------------------------------------- -->
+ <div class="income">
+     
+     <div class="lef">
+          <h3>Trucks</h3>
+          <h1>$10,024</h1>
+     </div>
+ 
+ <small class="text-muted">Live</small>
+ </div>
+ <!-- ---------------------------------------------- -->
+ <div class="income">
+                 
+ <div class="lef">
+      <h3>Missing</h3>
+      <h1>$10,024</h1>
+ </div>
+ 
+ <small class="text-muted">Live</small>
+ </div>
+ <!-- ---------------------------------------------- -->
+ <div class="income">
+ 
+ <div class="lef">
+  <h3>Non-Missing</h3>
+  <h1>$10,024</h1>
+ </div>
+ 
+ <small class="text-muted">Live</small>
+ </div>
+ 
+           
+ </div>
+     </div>
+     <div class="summary-ivms-box-3"></div> 
+     </div> 
+ 
+     <div class="summary-container-3">
+     </div>
+ 
+
+    </div>
 </div>
 
 <div class="ivms"><div class="test2"></div></div>
