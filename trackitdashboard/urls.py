@@ -10,7 +10,7 @@ urlpatterns = [
 	
 	path('loginp/', views.loginp, name="loginp"),  
 	path('logout/', views.logoutUser, name="logout"),
-	path('', views.CMS , name='CMS'),
+	path('', views.sumchecking , name='sumchecking'),
 	
 	path('Map/', views.Map , name='Map'),
 	path('Summary/', views.Summary , name='Summary'),

@@ -10,7 +10,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 def loginp(request):
 	if request.user.is_authenticated:
-		return redirect('CMS')
+		return redirect('sumchecking')
 	else:
 		if request.method == 'POST':
 			username = request.POST.get('username')
@@ -20,7 +20,7 @@ def loginp(request):
 
 			if user is not None:
 				login(request, user)
-				return redirect('CMS')
+				return redirect('sumchecking')
 			else:
 				messages.info(request, 'Username OR password is incorrect')
 
@@ -34,8 +34,8 @@ def logoutUser(request):
 
 
 @login_required(login_url='/loginp/')
-def CMS(request):
-	return render(request, 'CMS.html')
+def sumchecking(request):
+	return render(request, 'sumchecking.html')
 
 @login_required(login_url='/loginp/')
 def IVMS(request):

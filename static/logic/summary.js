@@ -1,12 +1,39 @@
-const sideMenu = document.querySelector("aside");
-const menuBtn = document.querySelector("#menu-btn");
-const closeBtn = document.querySelector("#close-btn");
+// target
+const summaryShow = document.querySelector(".summaryBtn");
+const cmsShow = document.querySelector(".cmsBtn");
+const ivmsShow = document.querySelector(".ivms");
+const settingShow = document.querySelector(".setting");
+// Btns
+const summaryBtnjs =document.querySelector("#summaryBtnhtml")
+const cmsBtnjs =document.querySelector("#cmsBtnhtml")
+const ivmsBtnjs =document.querySelector("#ivmsBtnhtml")
+const settingBtnjs =document.querySelector("#settingBtnhtml")
 
-menuBtn.addEventListener('click', () => {
-    sideMenu.style.display = 'block'
-})
+summaryBtnjs.addEventListener('click', () => {
+    summaryShow.style.display = 'inline';
+    cmsShow.style.display = 'none';
+    ivmsShow.style.display = 'none';
+    settingShow.style.display = 'none'
+    })
 
-closeBtn.addEventListener('click', () => {
-    sideMenu.style.display = 'none'
-}
-)
+cmsBtnjs.addEventListener('click', () => {
+    summaryShow.style.display = 'none';
+    cmsShow.style.display = 'inline';
+    ivmsShow.style.display = 'none';
+    settingShow.style.display = 'none'
+    })
+
+ivmsBtnjs.addEventListener('click', () => {
+    summaryShow.style.display = 'none';
+    cmsShow.style.display = 'none';
+    ivmsShow.style.display = 'inline';
+    settingShow.style.display = 'none'
+    })
+
+settingBtnjs.addEventListener('click', () => {
+    summaryShow.style.display = 'none';
+    cmsShow.style.display = 'none';
+    ivmsShow.style.display = 'none';
+    settingShow.style.display = 'inline'
+    })
+
