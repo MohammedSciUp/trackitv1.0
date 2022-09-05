@@ -184,31 +184,35 @@ aside h3{
     font-weight: 500;
 }
 
-aside .sidebar .active {
 
+aside .sidebar > div  {
+padding-left: 10px;
     display: flex;
     color: var(--color-info-dark);
-    margin-left: 2rem ;
+    margin-left: 1rem ;
     gap: 1rem;
     align-items: center;
     position: relative;
     height: 3.7rem;
     transition: all 300ms ease;
+ 
 
 }
 
-aside .sidebar .active span {
+
+
+aside .sidebar > div span {
     font-size: 1.6rem;
-    transition: all 200ms ease;
+    transition: all 300ms ease;
 }
 
-aside .sidebar .active:last-child{
+aside .sidebar > div:last-child{
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
     width: 100%;
 }
 
-.sidebar .active {
+/* .sidebar .active {
     background: var(--color-light);
     color: var(--color-primary);
     margin-left:0rem ;
@@ -224,15 +228,16 @@ aside .sidebar .active:last-child{
 .sidebar .active span{
     color: var(--color-primary);
     margin-left: calc(1rem - 6px);
- }
+ } */
 
- aside .sidebar .active:hover {
+
+ aside .sidebar > div:hover {
     color: var(--color-primary);
 
  }
 
 
-aside .sidebar .active:hover span {
+aside .sidebar div:hover span {
     margin-left: 1rem;
 }
 
@@ -407,7 +412,7 @@ main .insights .income svg circle {
 }
 /* ---------------------- insight-2  ------------------------------- */
 .summary-container-2{
-    grid-template-columns: 15.8rem 83% 0% ;
+    grid-template-columns: 15.8rem 80% 0% ;
     display: grid;
     gap: 1.5rem;
 } 
@@ -515,7 +520,7 @@ main .insights-2 >.income span {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: var(--gap);
-    margin-top: 6.7rem;
+    margin-top: 6.75rem;
     width: 100%;
     height: 0%;
    
@@ -526,7 +531,7 @@ main .insights-2 >.income span {
     background: var(--color-white);
    padding: var(--card-padding);
  width:100%;
- height: 26.1rem;
+ height: 26rem;
     border-radius: var(--card-border-redius);
   border: var(--border); 
     /* box-shadow: var(--box-shadow); */
@@ -705,7 +710,7 @@ display: none;
     border: 3px solid #00b4cc00;
     border-right: none;
     padding: 5px;
-   
+  
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #9dbfaf00;
@@ -741,13 +746,18 @@ display: none;
   }
 .cmsBtn {
     display: none;
-    animation: cmsShow 1000ms ease forwards;
+   
 
 }
 
-@keyframes cmsShow {
+@keyframes Showcms {
+    from{
+        top:0px;
+    }
     to{
-        left:0;
+        top:200px;
+
+
     }
 }
   .test {
@@ -755,7 +765,21 @@ display: none;
     width: 50rem;
     height: 50rem;
     z-index: 100000;
+    animation: Showcms 500ms ease infinite;
   }
+  .test2 {
+    background: #942323;
+    width: 50rem;
+    height: 50rem;
+    z-index: 100000;
+  }
+  .test3 {
+    background: #10b6ed;
+    width: 50rem;
+    height: 50rem;
+    z-index: 100000;
+  }
+ 
  
 /* ---------------------------    Media Queries    -------------------------- */
 
@@ -789,11 +813,11 @@ display: none;
         display: none;
     }
 
-    aside .sidebar a {
+    aside .sidebar > div {
         width: 5.6rem;
     }
 
-    aside .sidebar a:last-child {
+    aside .sidebar >  div:last-child {
         position: relative;
         margin-top: 1.8rem;
     }
