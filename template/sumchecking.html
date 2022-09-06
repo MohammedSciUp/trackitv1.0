@@ -52,30 +52,9 @@
                 <span class="material-symbols-sharp">settings</span>
                 <h3>Setting</h3>
             </div>
-            <!-- <a href="#">
-                <span class="material-symbols-sharp">mail_outline</span>
-                <h3>Messsages</h3>
-                <span class="message-count">26</span>
-            </a>
-            <a href="#">
-                <span class="material-symbols-sharp">inventory</span>
-                <h3>Products</h3>
-            </a>
-            <a href="#">
-                <span class="material-symbols-sharp">summarize</span>
-                <h3>Reports</h3>
-            </a>
-            <a href="#">
-                <span class="material-symbols-sharp">settings</span>
-                <h3>Settings</h3>
-            </a>
-            <a href="#">
-                <span class="material-symbols-sharp">add</span>
-                <h3>Add Product</h3>
-            </a> -->
-            <div class="Logout">
-                
-                <span class="material-symbols-sharp"> <a href="{% url 'logout' %}">logout</a> </span>
+           
+            <div class="Logout"  >
+                <span class="material-symbols-sharp">logout</span>
                 <h3>Logout</h3>
             </div>
         </div>
@@ -126,9 +105,7 @@
             <br>
           
 
-            <!-- <div class="date">middle
-                <input type="date">
-            </div> -->
+
 
             <div class="summary-insights-1">
                 <div class="sales">
@@ -273,24 +250,9 @@
     <div class="summary-ivms-box-2">
         <h1>IVMS</h1>
         <br>
-        <div class="summary-search-1">
-            <div class="summary-search-box-1">
-                <form method= 'POST' > 
-                    {% csrf_token %}
-               <input name='trucknumber'  type="text" class="summary-searchTerm" placeholder="search truck number">
-               <button type="submit" class="summary-searchButton">
-                <span class="material-symbols-sharp">
-                    search
-                    </span>
-              </button>
-            </form>
-            </div>
-         </div>
-      
+       
 
-        <!-- <div class="date">
-            <input type="date">
-        </div> -->
+    
 
         <div class="summary-insights-2">
 
@@ -446,16 +408,16 @@
  
           
              <h1>Crate Mangement System</h1>
+             
              <br>
+             <h1>Search Location</h1>
              <br>
-             <form method= 'POST' > 
-                 {% csrf_token %}
-             <input class="daterange" type="text" name="date" value="09/01/2022 - 09/01/2027" />
-             </form>
-             <form method= 'POST'>  
+            
+                  
+             <form class="cms-location-info-choose" name="cmsLocationInfoChoose" method="POST">
                 {% csrf_token %}
-                <label for="cars">Location:</label>
-                <select name="location" id="location" name="select">
+                <h6>Location :</h6>
+                <select class="location" name="location" id="location">
                   <option value="total">Total</option>
                   <option value="factory">Factory</option>
                   <option value="store 1">Store 1</option>
@@ -466,13 +428,20 @@
                   <option value="store 6">Store 6</option>
                   <option value="store 7">Store 7</option>
                 </select>
+             
+             
+              
+                <h2>Date :</h2>
+             
+                <input class="date-range" type="text" name="date"  value="09/01/2022 - 09/01/2027" />
+                <input class='lf--submit' type='submit'>
              </form>
-           <br>
-           <br>
+           
+            
+            <br>
+            <br>
  
-             <!-- <div class="date">middle
-                 <input type="date">
-             </div> -->
+             
  
              <div class="cms-insights-1">
                  <div class="cms-missing-indicator-1">
@@ -512,7 +481,7 @@
                  <small class="text-muted">Live</small>
              </div>
              <!-- ---------------------------------------------- -->
-             
+             <
  <!-- ---------------------------------------------- -->
                  <!-- ----------------------------  END OF INCOME  ------------------------------------------->
              </div>
@@ -599,10 +568,7 @@
              <br>
            
  
-             <!-- <div class="date">middle
-                 <input type="date">
-             </div> -->
- 
+             
              <div class="summary-insights-1">
                  <div class="sales">
                      
@@ -747,23 +713,19 @@
          <h1>IVMS</h1>
          <br>
          <div class="summary-search-1">
-             <div class="summary-search-box-1">
-                <form method= 'POST' >
-                     {% csrf_token %}
-                <input  name = "trucknumber" type="text" class="summary-searchTerm" placeholder="search truck number">
-                <button type="submit" class="summary-searchButton">
-                 <span class="material-symbols-sharp">
-                     search
-                     </span>
-               </button>
+            <div class="summary-search-box-1">
+            <form method="POST" >
+               <input type="text" class="summary-searchTerm" placeholder="search truck number" name="ivmsSearch">
+               <input class='lf--submit' type='submit'>
+                <span class="material-symbols-sharp">
+                    search
+                    </span>
+              </button>
             </form>
-             </div>
-          </div>
-       
+            </div>
+         </div>
  
-         <!-- <div class="date">
-             <input type="date">
-         </div> -->
+
  
          <div class="summary-insights-2">
  

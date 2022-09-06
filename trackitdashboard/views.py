@@ -3,8 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 import pyrebase
 import firebase_admin
 from firebase_admin import credentials
@@ -107,12 +106,6 @@ teststation = {
 current_time = dt.datetime.now()
 dbfs.collection('stations').document('teststation').set(teststation)
 dbfs.collection('stations').document('teststation').collection('current_time').document('teststation').set(teststation)
-=======
-
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 
 
 # ..................
@@ -145,11 +138,13 @@ def logoutUser(request):
  
 @login_required(login_url='/loginp/')
 def sumchecking(request):
-	if request.method == 'POST':
-		dict = {'trucknumber': request.POST.get('trucknumber'),
-			'crtsdate' : request.POST.get('date'),
-			'selectstation': request.POST.get('selectstation'),}
-	print(dict.get('selectstation'))
+	
+	location  =  request.POST.get('location')
+	datelocation      = request.POST.get('date')
+	# selectstation =  request.POST.get('selectstation')
+	print(location)
+	print(datelocation)
+
 	return render(request, 'sumchecking.html')
 	
 

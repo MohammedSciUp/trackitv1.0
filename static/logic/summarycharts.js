@@ -4,7 +4,7 @@ var xValues = [ "January","February","March","April","May","June",
 var yValues = [145,124,175,254,271,301,241,199,230,200,145,101];
 
 const ctx = document.getElementById('MissingChart')
-const myChart = new Chart(ctx, {
+const myChart = new Chart (ctx, {
     type: "line",
     data: {
       labels: xValues,
@@ -15,23 +15,23 @@ const myChart = new Chart(ctx, {
         backgroundColor: "rgba(0,0,255,1.0)",
         borderColor: "rgba(0,0,255,0.1)",
         data: yValues,
-      
-      
-    
+  
       }]
     },
     options:{
+      color: 'rgba(0,0,255,1.0)',
       maintainAspectRatio: false,
       responsive: true,
       scales: {
-				y: {
+        color: 'rgba(0,0,255,1.0)',
+				yAxis:[ {
 					beginAtZero: true,
 					grid: {
 						color: '#000',
 						drawBorder: false 
 					}
-				},
-				x: {
+				}],
+				xAxis: {
 					grid: {
 						display: false,
 					}
@@ -57,7 +57,12 @@ const myChart = new Chart(ctx, {
         responsive:true,
       legend: {display: false},
       scales: {
-        yAxes: [{ticks: {min: 6, max:500},
+        yAxis: [{
+          ticks:
+           {
+            min: 6,
+           max:500
+          },
             grid:{
                 responsive:true,
       lineWidth:0.5,
