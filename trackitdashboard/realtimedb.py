@@ -1,4 +1,5 @@
 import pyrebase
+<<<<<<< Updated upstream
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
@@ -52,6 +53,27 @@ def fromfirebase(x):
         return (db.child("TestStation").child("gpsinfo").child("DATE").get().val())
     elif x == 'tags':
         return(db.child("TestStation").child("tags").get())
+=======
+
+# firebase things .. 
+firebaseConfig = {
+  'apiKey': "AIzaSyCvMdHT1x0DWUrEmytHyVFS8MKY7nITLJw",
+  'authDomain': "tackitpro.firebaseapp.com",
+  'databaseURL': "https://tackitpro-default-rtdb.firebaseio.com",
+  'projectId': "tackitpro",
+  'storageBucket': "tackitpro.appspot.com",
+  'messagingSenderId': "41957710201",
+  'appId': "1:41957710201:web:175ebf5003b8a32c1937a8",
+  'measurementId': "G-5FGQW7JYJQ"
+};
+firebase = pyrebase.initialize_app(firebaseConfig)
+# #realtime database 
+
+db = firebase.database()
+# naming variables 
+
+def fromfirebase(x):
+>>>>>>> Stashed changes
     if x == 'driver_iD':
         return (db.child("vms").child("driver_iD").get().val())
     elif x == 'co_driver_iD':
@@ -77,6 +99,7 @@ def fromfirebase(x):
     else:
         return('invalid input !!')
 
+<<<<<<< Updated upstream
 # Setup
 cred = credentials.Certificate("testing-d7987-firebase-adminsdk-91gws-dee6f6a7f0.json")
 firebase_admin.initialize_app(cred)
@@ -101,3 +124,7 @@ teststation = {
 current_time = dt.datetime.now()
 dbfs.collection('stations').document('teststation').set(teststation)
 dbfs.collection('stations').document('teststation').collection('current_time').document('teststation').set(teststation)
+=======
+
+def 
+>>>>>>> Stashed changes

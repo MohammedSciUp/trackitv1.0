@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+<<<<<<< Updated upstream
 import pyrebase
 import firebase_admin
 from firebase_admin import credentials
@@ -105,6 +106,9 @@ teststation = {
 current_time = dt.datetime.now()
 dbfs.collection('stations').document('teststation').set(teststation)
 dbfs.collection('stations').document('teststation').collection('current_time').document('teststation').set(teststation)
+=======
+
+>>>>>>> Stashed changes
 
 
 # ..................
