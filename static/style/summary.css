@@ -4,15 +4,10 @@
 
 /* ---------------------------    ROOT VARIABLES    -------------------------- */
 :root {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     --color-primary: #009de0;
-=======
     --color-primary: #002581;
->>>>>>> 7d16e4be29621063f844337f4d70c6308a446bdb
-=======
     --color-primary: #002581;
->>>>>>> 7d16e4be29621063f844337f4d70c6308a446bdb
     --color-danger: #ff3232;
     --color-success: #00be7f;
     --color-warning: #ffbb55;
@@ -514,11 +509,7 @@ main .insights-2 >.income span {
 }
 /* --------------------------------------- insight-3  ------------------------------------------ */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7d16e4be29621063f844337f4d70c6308a446bdb
+
 .insights-3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -643,10 +634,7 @@ main .insights .income svg circle {
     margin-bottom: 1rem;
     display: block;
 }
-<<<<<<< HEAD
->>>>>>> 7d16e4be29621063f844337f4d70c6308a446bdb
-=======
->>>>>>> 7d16e4be29621063f844337f4d70c6308a446bdb
+
 /* ===================================  Recent Orders /    ===================================== */
 
 main .recent-orders {
@@ -954,12 +942,6 @@ display: none;
         grid-template-columns: repeat(5, 1fr);
         gap: 1.6rem;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> 7d16e4be29621063f844337f4d70c6308a446bdb
     aside{
         height: 100vh;
         background: var(--color-white);
@@ -970,10 +952,7 @@ display: none;
         
         
         }
-<<<<<<< HEAD
->>>>>>> 7d16e4be29621063f844337f4d70c6308a446bdb
-=======
->>>>>>> 7d16e4be29621063f844337f4d70c6308a446bdb
+
     aside .logo h2 {
         display: none;
 

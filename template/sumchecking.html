@@ -73,8 +73,9 @@
                 <span class="material-symbols-sharp">add</span>
                 <h3>Add Product</h3>
             </a> -->
-            <div class="Logout"  >
-                <span class="material-symbols-sharp">logout</span>
+            <div class="Logout">
+                
+                <span class="material-symbols-sharp"> <a href="{% url 'logout' %}">logout</a> </span>
                 <h3>Logout</h3>
             </div>
         </div>
@@ -274,12 +275,15 @@
         <br>
         <div class="summary-search-1">
             <div class="summary-search-box-1">
-               <input type="text" class="summary-searchTerm" placeholder="search truck number">
+                <form method= 'POST' > 
+                    {% csrf_token %}
+               <input name='trucknumber'  type="text" class="summary-searchTerm" placeholder="search truck number">
                <button type="submit" class="summary-searchButton">
                 <span class="material-symbols-sharp">
                     search
                     </span>
               </button>
+            </form>
             </div>
          </div>
       
@@ -444,10 +448,14 @@
              <h1>Crate Mangement System</h1>
              <br>
              <br>
+             <form method= 'POST' > 
+                 {% csrf_token %}
              <input class="daterange" type="text" name="date" value="09/01/2022 - 09/01/2027" />
-             <form >
+             </form>
+             <form method= 'POST'>  
+                {% csrf_token %}
                 <label for="cars">Location:</label>
-                <select name="location" id="location">
+                <select name="location" id="location" name="select">
                   <option value="total">Total</option>
                   <option value="factory">Factory</option>
                   <option value="store 1">Store 1</option>
@@ -504,7 +512,7 @@
                  <small class="text-muted">Live</small>
              </div>
              <!-- ---------------------------------------------- -->
-             <
+             
  <!-- ---------------------------------------------- -->
                  <!-- ----------------------------  END OF INCOME  ------------------------------------------->
              </div>
@@ -740,12 +748,15 @@
          <br>
          <div class="summary-search-1">
              <div class="summary-search-box-1">
-                <input type="text" class="summary-searchTerm" placeholder="search truck number">
+                <form method= 'POST' >
+                     {% csrf_token %}
+                <input  name = "trucknumber" type="text" class="summary-searchTerm" placeholder="search truck number">
                 <button type="submit" class="summary-searchButton">
                  <span class="material-symbols-sharp">
                      search
                      </span>
                </button>
+            </form>
              </div>
           </div>
        
