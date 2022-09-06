@@ -446,12 +446,11 @@
              <br>
              <h1>Search Location</h1>
              <br>
-             <div class="cms-search-filter">
-
-                  <h6>Location :</h6>
-             <form class="cms-location-info-choose" name="cmsLocationInfoChoose">
-                
-                <select name="location" id="location">
+            
+                  
+             <form class="cms-location-info-choose" name="cmsLocationInfoChoose" method="POST">
+                <h6>Location :</h6>
+                <select class="location" name="location" id="location">
                   <option value="total">Total</option>
                   <option value="factory">Factory</option>
                   <option value="store 1">Store 1</option>
@@ -467,11 +466,11 @@
               
                 <h2>Date :</h2>
              
-                <input class="date-range" type="text"  value="09/01/2022 - 09/01/2027" />
+                <input class="date-range" type="text" name="date"  value="09/01/2022 - 09/01/2027" />
              <h6>Information :</h6>
              
                 
-                <select name="location" id="location">
+                <select class="data" name="data" id="data">
                   <option value="all">All Data</option>
                   <option value="factory">Factory</option>
                   <option value="store 1">Store 1</option>
@@ -484,7 +483,7 @@
                 </select>
              </form>
            
-            </div>
+            
             <br>
             <br>
  
