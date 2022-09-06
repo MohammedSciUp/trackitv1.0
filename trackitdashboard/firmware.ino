@@ -1,5 +1,6 @@
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // #include <SoftwareSerial.h>
 // #include <TinyGPSPlus.h>
 // #include <DHT.h>
@@ -221,6 +222,8 @@
 
 // }
 =======
+=======
+>>>>>>> Stashed changes
 #include <SoftwareSerial.h>
 #include <TinyGPSPlus.h>
 #include <DHT.h>
@@ -441,4 +444,7 @@ if (Firebase.RTDB.setArray(&fbdo, "tags/number", tagsArray)){
 }}
 
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

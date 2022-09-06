@@ -1,5 +1,6 @@
 import pyrebase
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
@@ -54,6 +55,8 @@ def fromfirebase(x):
     elif x == 'tags':
         return(db.child("TestStation").child("tags").get())
 =======
+=======
+>>>>>>> Stashed changes
 
 # firebase things .. 
 firebaseConfig = {
@@ -73,6 +76,9 @@ db = firebase.database()
 # naming variables 
 
 def fromfirebase(x):
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     if x == 'driver_iD':
         return (db.child("vms").child("driver_iD").get().val())
@@ -100,6 +106,7 @@ def fromfirebase(x):
         return('invalid input !!')
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 # Setup
 cred = credentials.Certificate("testing-d7987-firebase-adminsdk-91gws-dee6f6a7f0.json")
 firebase_admin.initialize_app(cred)
@@ -124,6 +131,10 @@ teststation = {
 current_time = dt.datetime.now()
 dbfs.collection('stations').document('teststation').set(teststation)
 dbfs.collection('stations').document('teststation').collection('current_time').document('teststation').set(teststation)
+=======
+
+def 
+>>>>>>> Stashed changes
 =======
 
 def 

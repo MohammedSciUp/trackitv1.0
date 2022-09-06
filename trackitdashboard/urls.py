@@ -11,6 +11,7 @@ urlpatterns = [
 	path('loginp/', views.loginp, name="loginp"),  
 	path('logout/', views.logoutUser, name="logout"),
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 	path('', views.sumchecking , name='sumchecking'),
 
@@ -19,6 +20,9 @@ urlpatterns = [
 
 	path('', views.sumchecking , name='sumchecking'),
 
+=======
+	path('CMS', views.CMS , name='CMS'),
+>>>>>>> Stashed changes
 =======
 	path('CMS', views.CMS , name='CMS'),
 >>>>>>> Stashed changes
