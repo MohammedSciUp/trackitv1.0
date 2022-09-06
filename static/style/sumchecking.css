@@ -516,23 +516,25 @@ height: 100%;
     
 
 }
-.cms-cms-box-2 .cms-search-filter {
+.cms-cms-box-2 .cms-location-info-choose {
     display: grid;
     width: 200%;
     gap:0.3rem;
     grid-template-columns: 6.5rem auto 4rem auto 7.5rem auto ;
+    
 }
 
-.cms-cms-box-2 .date-range {
+ .cms-location-info-choose .date-range {
     background-color: var(--color-white);
     border: var(--border);
     width: 12rem;
     height: 2.5rem;
     text-align: center;
     border-radius: var(--card-border-redius);
+    z-index: 1000;
 }
 
-.cms-cms-box-2 .cms-info-choose {
+ .cms-location-info-choose select {
     background-color: var(--color-white);
     border: var(--border);
     width: 6rem;
@@ -544,25 +546,20 @@ height: 100%;
     z-index: 1000;
 
 }
-.cms-cms-box-2 .cms-info-choose select {
- 
-    text-align: center;
-    font-size: 1rem;
-
-}
-
-
-.cms-cms-box-2 .cms-location-choose select {
-  
-    border-radius: var(--card-border-redius);
-    text-align: center;
-    font-size: 1rem;
+/* .cms-search-filter  .cms-location-info-choose .location {
+    background-color: var(--color-white);
+    border: var(--border);
     width: 6rem;
     height: 2.5rem;
-    background: var(--color-white);
-    border: var(--border);
+    text-align: center;
+    border-radius: var(--card-border-redius);
+    font-size: 1rem;
+    padding: 0.5rem;
+    z-index: 1000;
 
-}
+} */
+
+.cms-search-filter 
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------- */
